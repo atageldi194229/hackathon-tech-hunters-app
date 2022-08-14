@@ -1,5 +1,3 @@
-import 'dart:html';
-import 'dart:math';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -57,11 +55,13 @@ class _HomePageState extends State<HomePage> {
                       Icons.login_outlined,
                       color: Color.fromRGBO(173, 173, 175, 1),
                     ),
-
-                     onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CupertinoSegmentedControlWidget()));
-                },
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  CupertinoSegmentedControlWidget()));
+                    },
                   ),
                 )
               ],
